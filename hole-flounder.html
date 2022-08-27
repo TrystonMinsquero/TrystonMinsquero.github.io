@@ -1,0 +1,233 @@
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8' />
+        <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+        <meta http-equiv='X-UA-Compatible' content='ie=edge' />
+        <title>Tryston's Website</title>
+        <link rel="icon" type="image/x-icon" href="img/favicon.png">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-FWQF9CQ8MJ"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-FWQF9CQ8MJ');
+        </script>
+
+        <script
+            src='https://kit.fontawesome.com/3e7b4fdb0f.js'
+            crossorigin='anonymous'
+        ></script>
+        
+        <!--styles-->
+                <link rel='stylesheet' href='css/style.css' />
+                <link rel='stylesheet' href='css/proj.css' />
+                <link rel='stylesheet' href='css/tabletsupport.css' />
+    </head>
+    <body>
+        <!--Navbar-->
+        <div class='page-container'>
+            <div class='container'>
+                <header class='header output' id='output'>
+                    <h1 class='cursor'></h1>
+                </header>
+                    <nav class='navbar'>
+                        <ul class='flex list'>
+                            <li><a class='underline' href='/'>HOME</a></li>
+                            <li><a class='underline' href='/about'>ABOUT</a></li>
+                            <li><a class='underline' href='/portfolio'>PORTFOLIO</a></li>
+                            <li><a class='underline' href='/resume'>CV</a></li>
+                            <li><a class='underline' href='/contact'>CONTACT</a></li>
+                        </ul>
+                    </nav>
+            </div>
+
+            <!--Content-->
+            <div class='content-wrap'>
+                    <link rel='shortcut icon' href='UnityTemplate/favicon.ico' />
+    <link rel='stylesheet' href='UnityTemplate/style.css' />
+    <script src='UnityTemplate/UnityProgress.js'></script>
+    <script
+        src='/hole-flounder/builds/EmbeddedWebGL/UnityLoader.js'
+    ></script>
+    <script>
+        let unityInstance; const fullscreenBtn =
+        document.getElementById("fullscreen"); //get and remove helper div const
+        buildPath = '/hole-flounder/builds/EmbeddedWebGL/WebGL.json';
+        const startGame = () => { unityInstance =
+        UnityLoader.instantiate('unityContainer', buildPath, {onProgress:
+        UnityProgress}); const webgl = document.getElementById('webgl');
+        document.getElementById('PlayButton').remove() };
+    </script>
+
+<div class='container'>
+    <div class='flex-vert' id='showdown-content'><h1 id="holeflounder">Hole Flounder</h1>
+<h3 id="role">Role</h3>
+<p>Programmer, Game Designer, &amp; Project Manager</p>
+<h3 id="team">Team</h3>
+<p>Michael Bettes, Jonica Brooks, Kameron Thrasher.</p>
+<h2 id="summary">Summary</h2>
+<p>Hole Flounder was my 3rd game jam and 2nd entry for Ludum dare. My goal this time was to make as much of a polished game in 72 hours, as the rest of my game jams never seemed quite finished. This allowed me to focus on the more detailed side of game development/programming. I also wanted to see what I could accomplish with a small team that I have worked with previously.</p>
+<h2 id="whaticontributed">What I contributed</h2>
+<p>I had done all the programming besides simple UI scripts. Most of this was the player controls, animations, level programming, procedural generation, abilities, sound transitions, and more. I was also managing what everyone else was getting done so we could finish the game on time and helping my team as needed.</p>
+<h2 id="challengesfaced">Challenges faced</h2>
+<p>It was fairly difficult to get the player movement to feel good and falling at the same time, so I learned what most game developers realize in endless games, to just move the level instead. The procedural generation was also a little tricky to figure out to make it easy for the level designer (Michael) to easily add new level segments without changing the code. Using naming conventions and file reading, this was something I was able to overcome. Lastly, trying to have the level change based on the current depth was easy. This was solved by having the changing tileset generation at runtime, which took learning how Unity Tilesets worked and also a lot of math to have the tiles generate at correct locations.</p>
+<h2 id="whatilearned">What I Learned</h2>
+<p>I learned how to do simple procedural generation based off some predetermined templates. A better understanding of coroutines in unity, and a better understanding of how to develop while keeping in mind for a level designer/game designer ease of editing. I also learned how to use the resources folder in unity, and in retrospect what I could use instead of the resources folder (like scriptable objects).</p>
+<p>I also took advantage of naming conventions, naming certain files (like level templates or animations) in a way where I could reference them from logic rather than using the animation controller state machine.</p></div>
+
+    <div class='pc-only'>
+        <!--Display EmbeddedWebGL (currently disabled)-->
+        <div class='flex'>
+                <!--Try it Out-->
+                    <p id="TryItOut"><a
+                            class='underline'
+                            href='/hole-flounder/builds/WebGL'
+                            target='_blank'
+                        >Try It Out!</a></p>
+        </div>
+
+        <!--Downloads-->
+            <section>
+                <h3 class='flex header'>Downloads</h3>
+                <ul class='list flex'>
+                        <li>
+                            <a
+                                href='/hole-flounder/builds/Windows/Hole Flounder.zip'
+                                download
+                            >
+                                <img
+                                    class='out'
+                                    width='32px'
+                                    height='32px'
+                                    src='img/icons/windows.svg'
+                                    alt='Windows'
+                                />
+                            </a>
+                        </li>
+                </ul>
+            </section>
+    </div>
+
+    <!--external icon links-->
+        <section>
+            <h3 class='flex header'>Links</h3>
+            <ul class='list flex'>
+                    <li>
+                        <a href=https://github.com/TrystonMinsquero/Ludum-Dare-48 target='_blank'>
+                            <img
+                                class='out'
+                                width='32px'
+                                height='32px'
+                                src='img/icons/github.svg'
+                                alt='Github'
+                            />
+                        </a>
+                    </li>
+                    <li>
+                        <a href=https://tryston.itch.io/hole-flounder target='_blank'>
+                            <img
+                                class='out'
+                                width='32px'
+                                height='32px'
+                                src='img/icons/itch-io.svg'
+                                alt='Itch.io'
+                            />
+                        </a>
+                    </li>
+            </ul>
+        </section>
+</div>
+            </div>
+
+            <!--Footer-->
+            <div class='footer'>
+                <div class='edge'></div>
+                <footer class='grid'>
+                    <!--Phone number-->
+                    <div class='footer_child'>
+                    </div>
+
+                    <!--Links to other sites-->
+                    <div class='footer_child'>
+                        <ul class='list'>
+                            <li>
+                                <a href='/discord' target='_blank'>
+                                    <img
+                                        class='out'
+                                        width='32px'
+                                        height='32px'
+                                        src='img/icons/discord.svg'
+                                        alt='Discord'
+                                    />
+                                </a>
+                            </li>
+                            <li>
+                                <a href='/linkedin' target='_blank'>
+                                    <img
+                                        class='out'
+                                        width='32px'
+                                        height='32px'
+                                        src='img/icons/linkedin.svg'
+                                        alt='LinkedIn'
+                                    />
+                                </a>
+                            </li>
+                            <li>
+                                <a href='/github' target='_blank'>
+                                    <img
+                                        class='out'
+                                        width='32px'
+                                        height='32px'
+                                        src='img/icons/github.svg'
+                                        alt='Github'
+                                    />
+                                </a>
+                            </li>
+                            <li>
+                                <a href='/itch-io' target='_blank'>
+                                    <img
+                                        class='out'
+                                        width='32px'
+                                        height='32px'
+                                        src='img/icons/itch-io.svg'
+                                        alt='Itch.io'
+                                    />
+                                </a>
+                            </li>
+                            <li>
+                                <a href='/email' target='_blank'>
+                                    <img
+                                        class='out'
+                                        width='32px'
+                                        height='32px'
+                                        src='img/icons/devpost.svg'
+                                        alt='Devpost'
+                                    />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!--Contact email-->
+                    <div class='footer_child'>
+                        <h3 style="text-transform:none;"><a href="/email">Trystonminsquero@gmail.com</a></h3>
+                        <p id="Contact-Me"><em
+                                class='fas fa-envelope'
+                                style='padding: 0 10px;'
+                            ></em><a href="/contact" >Contact me!</a></p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </body>
+    <!--scripts-->
+
+    <script src='js/activePage.js'></script>
+    <script src='js/stickyNav.js'></script>
+    <script src='js/typing.js'></script>
+            <script src='js/project.js'></script>
+
+</html>

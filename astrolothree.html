@@ -1,0 +1,230 @@
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8' />
+        <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+        <meta http-equiv='X-UA-Compatible' content='ie=edge' />
+        <title>Tryston's Website</title>
+        <link rel="icon" type="image/x-icon" href="img/favicon.png">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-FWQF9CQ8MJ"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-FWQF9CQ8MJ');
+        </script>
+
+        <script
+            src='https://kit.fontawesome.com/3e7b4fdb0f.js'
+            crossorigin='anonymous'
+        ></script>
+        
+        <!--styles-->
+                <link rel='stylesheet' href='css/style.css' />
+                <link rel='stylesheet' href='css/proj.css' />
+                <link rel='stylesheet' href='css/tabletsupport.css' />
+    </head>
+    <body>
+        <!--Navbar-->
+        <div class='page-container'>
+            <div class='container'>
+                <header class='header output' id='output'>
+                    <h1 class='cursor'></h1>
+                </header>
+                    <nav class='navbar'>
+                        <ul class='flex list'>
+                            <li><a class='underline' href='/'>HOME</a></li>
+                            <li><a class='underline' href='/about'>ABOUT</a></li>
+                            <li><a class='underline' href='/portfolio'>PORTFOLIO</a></li>
+                            <li><a class='underline' href='/resume'>CV</a></li>
+                            <li><a class='underline' href='/contact'>CONTACT</a></li>
+                        </ul>
+                    </nav>
+            </div>
+
+            <!--Content-->
+            <div class='content-wrap'>
+                
+<div class='container'>
+    <div class='flex-vert' id='showdown-content'><h1 id="astrolothree">Astrolothree</h1>
+<h3 id="role">Role</h3>
+<p>Programmer, Game Designer, and Project Lead</p>
+<h3 id="team">Team</h3>
+<p>Dylan T Moss, Jonica Brooks, Silvano Gallegos</p>
+<h2 id="background">Background</h2>
+<p>We made Astrothree for a week long <a href="https://itch.io/jam/sgda-spring-jam">game jam hosted by SGDA</a> during the spring semester of 2021 with the theme: "Rule of Three". The team consisted of my roommate and two people that I had never met, and it was all done virtually. I was the only one with prior game development experience and ended up leading the team. Additionally, this was my first time working with an artist and another programmer.</p>
+<h2 id="summary">Summary</h2>
+<p>We ended up making a top down wave based survival-arcade game, where the player has 3 forms and each form is more or less effective against different enemy forms. It also takes advantage of a free high-score api to keep track of high-scores over the internet.</p>
+<h2 id="whaticontributed">What I Contributed</h2>
+<ul>
+<li>Came up with the original idea for the game</li>
+<li>Created player input controls</li>
+<li>The high-score system implementation and scene</li>
+<li>Implement unity's 2D light renderer and post processing (especially seen with bloom)</li>
+<li>Created an emission map for the character sprite-sheet</li>
+<li>Created the wave-based gameplay system</li>
+<li>All sounds effects</li>
+<li>Distributed tasks to other team members</li>
+</ul>
+<h2 id="challengesfaced">Challenges faced</h2>
+<p>As stated before, I was the only who had previous experience, so delegating tasks and making sure things are being completed in a good order took more time than expected. My teammates did amazing and I also contributed a lot, but having school during the week and also people having jobs didn't allow us to get as much done as I would've hoped for. Since many of them have never used Unity or made a game before, trying to guide them also took some time. For example, the character animation for attacking has a very small attack range, which made implementing gameplay fairly difficult.</p>
+<h2 id="whatilearned">What I Learned</h2>
+<p>I learned how nice it was to have a competent team who's skills are diverse and how important it is to communicate with them to have a good product. I also learned a lot about unity, from 2D lights and graphics to how <em>not</em> to organize code in a unity project. Although we got it to work, going to look back at the code does not seem like a good time. In addition I learned more about Coroutines and many other aspects about C# in Unity.</p>
+<h2 id="whatimmostproudof">What I'm Most Proud of</h2>
+<p>Getting the bloom to work and also the online high-score system to work I think really impressed the judges to where we won a prize for "Best Technical". Additionally I think this is one of the best looking games in terms of graphics I have made.</p></div>
+
+    <div class='pc-only'>
+        <!--Display EmbeddedWebGL (currently disabled)-->
+        <div class='flex'>
+                <!--Try it Out-->
+                    <p id="TryItOut"><a
+                            class='underline'
+                            href='/astrolothree/builds/WebGL'
+                            target='_blank'
+                        >Try It Out!</a></p>
+        </div>
+
+        <!--Downloads-->
+            <section>
+                <h3 class='flex header'>Downloads</h3>
+                <ul class='list flex'>
+                        <li>
+                            <a
+                                href='/astrolothree/builds/Windows/Astrolothree.zip'
+                                download
+                            >
+                                <img
+                                    class='out'
+                                    width='32px'
+                                    height='32px'
+                                    src='img/icons/windows.svg'
+                                    alt='Windows'
+                                />
+                            </a>
+                        </li>
+                </ul>
+            </section>
+    </div>
+
+    <!--external icon links-->
+        <section>
+            <h3 class='flex header'>Links</h3>
+            <ul class='list flex'>
+                    <li>
+                        <a href=https://github.com/TrystonMinsquero/SDGA-Spring-Game-Jam-2021 target='_blank'>
+                            <img
+                                class='out'
+                                width='32px'
+                                height='32px'
+                                src='img/icons/github.svg'
+                                alt='Github'
+                            />
+                        </a>
+                    </li>
+                    <li>
+                        <a href=https://tryston.itch.io/astrolothree target='_blank'>
+                            <img
+                                class='out'
+                                width='32px'
+                                height='32px'
+                                src='img/icons/itch-io.svg'
+                                alt='Itch.io'
+                            />
+                        </a>
+                    </li>
+            </ul>
+        </section>
+</div>
+            </div>
+
+            <!--Footer-->
+            <div class='footer'>
+                <div class='edge'></div>
+                <footer class='grid'>
+                    <!--Phone number-->
+                    <div class='footer_child'>
+                    </div>
+
+                    <!--Links to other sites-->
+                    <div class='footer_child'>
+                        <ul class='list'>
+                            <li>
+                                <a href='/discord' target='_blank'>
+                                    <img
+                                        class='out'
+                                        width='32px'
+                                        height='32px'
+                                        src='img/icons/discord.svg'
+                                        alt='Discord'
+                                    />
+                                </a>
+                            </li>
+                            <li>
+                                <a href='/linkedin' target='_blank'>
+                                    <img
+                                        class='out'
+                                        width='32px'
+                                        height='32px'
+                                        src='img/icons/linkedin.svg'
+                                        alt='LinkedIn'
+                                    />
+                                </a>
+                            </li>
+                            <li>
+                                <a href='/github' target='_blank'>
+                                    <img
+                                        class='out'
+                                        width='32px'
+                                        height='32px'
+                                        src='img/icons/github.svg'
+                                        alt='Github'
+                                    />
+                                </a>
+                            </li>
+                            <li>
+                                <a href='/itch-io' target='_blank'>
+                                    <img
+                                        class='out'
+                                        width='32px'
+                                        height='32px'
+                                        src='img/icons/itch-io.svg'
+                                        alt='Itch.io'
+                                    />
+                                </a>
+                            </li>
+                            <li>
+                                <a href='/email' target='_blank'>
+                                    <img
+                                        class='out'
+                                        width='32px'
+                                        height='32px'
+                                        src='img/icons/devpost.svg'
+                                        alt='Devpost'
+                                    />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!--Contact email-->
+                    <div class='footer_child'>
+                        <h3 style="text-transform:none;"><a href="/email">Trystonminsquero@gmail.com</a></h3>
+                        <p id="Contact-Me"><em
+                                class='fas fa-envelope'
+                                style='padding: 0 10px;'
+                            ></em><a href="/contact" >Contact me!</a></p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </body>
+    <!--scripts-->
+
+    <script src='js/activePage.js'></script>
+    <script src='js/stickyNav.js'></script>
+    <script src='js/typing.js'></script>
+            <script src='js/project.js'></script>
+
+</html>
