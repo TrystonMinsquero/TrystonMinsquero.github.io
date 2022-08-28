@@ -1,0 +1,47 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8' />
+        <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+        <meta http-equiv='X-UA-Compatible' content='ie=edge' />
+        <link rel="icon" type="image/x-icon" href="/assets/images/favicon.png">
+        
+        <title> {{ site.title }} | {{ page.title }} </title>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-FWQF9CQ8MJ"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-FWQF9CQ8MJ');
+        </script>
+
+        <!-- Font Awesome -->
+        <script src='https://kit.fontawesome.com/3e7b4fdb0f.js' crossorigin='anonymous'></script>
+
+        <!-- Custom -->
+        <link rel="stylesheet" href="/assets/css/main.css">
+    </head>
+    <body>
+        {% include navbar.html %}
+
+        <main class="children-are-content">
+            {{ content }}
+        </main>
+
+        {% include footer.html %}
+    </body>
+
+    <!-- scripts -->
+    <!-- <script src='js/activePage.js'></script>
+    <script src='js/stickyNav.js'></script> -->
+{% if page.animated-title %}
+    <script src="/assets/js/typing.js"></script>
+{% endif %}
+</html>

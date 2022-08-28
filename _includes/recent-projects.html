@@ -1,0 +1,8 @@
+<div class="recent-projects flex flex-col lg:flex-row">
+{% for post in site.posts limit:include.amount %}
+    {% assign imageurl = post.url | append: "thumbnail.png" %}
+    <a href="{{ post.url }}" style="background-image: url({{ imageurl }});">
+        <p> {{ post.title }} </p>
+    </a>
+{% endfor %}
+</div>
