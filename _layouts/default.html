@@ -28,8 +28,10 @@ layout: compress
         <!-- Custom -->
         <link rel="stylesheet" href="/assets/css/main.css">
     </head>
-    <body>
-        {% include navbar.html %}
+    <body class="flex flex-column justify-between" style="min-height: 100vh;">
+        <div>
+            {% include navbar.html %}
+        </div>
 
         <main class="children-are-content">
             {{ content }}
@@ -38,10 +40,10 @@ layout: compress
         {% include footer.html %}
     </body>
 
-    <!-- scripts -->
-    <!-- <script src='js/activePage.js'></script>
-    <script src='js/stickyNav.js'></script> -->
-{% if page.animated-title %}
-    <script src="/assets/js/typing.js"></script>
-{% endif %}
+    <script>
+        {% if page.animated-title %}
+            {% include js/typing.js %}
+        {% endif %}
+        {% include js/burger.js %}
+    </script>
 </html>

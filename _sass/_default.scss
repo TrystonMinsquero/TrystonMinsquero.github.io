@@ -1,3 +1,4 @@
+// document defaults
 body
 {
     font-family: "Montserrat", sans-serif;
@@ -8,4 +9,58 @@ body
     
     padding: 0;
     margin: 0;
+}
+
+// reponsive layout base
+.content-wrapper
+{
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+}
+
+$max-width: 900px;
+.content, .children-are-content > *:not(.ignore)
+{
+    max-width: $max-width;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: $max-width)
+{
+    .children-are-content > *:not(.ignore)
+    {
+        padding-left: 1.75rem;
+        padding-right: 1.75rem;
+    }
+}
+
+// default links
+a, a:visited
+{
+    color: white;
+    text-decoration: underline;
+    animation: all .1s ease-in;
+}
+
+a:hover
+{
+    color: $clr-navbar-dark;
+}
+
+// default buttons
+button
+{
+    border: 0;
+}
+
+// global gradients
+.gradient-blue
+{
+    background: linear-gradient(to top, $clr-home-light, $clr-home-light, $clr-cover-light ) no-repeat 0 0
+}
+
+.gradient-black
+{
+    background: linear-gradient(to top right, $clr-gray-dark, $clr-gray-light) no-repeat 0 0 / cover;
 }

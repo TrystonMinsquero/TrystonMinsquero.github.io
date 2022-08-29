@@ -1,4 +1,4 @@
-<div class="recent-projects flex flex-col lg:flex-row">
+<div class="recent-projects flex flex-column lg:flex-row {{ include.class }}">
 {% for post in site.posts limit:include.amount %}
     {% assign imageurl = post.url | append: "thumbnail.png" %}
     <a href="{{ post.url }}" style="background-image: url({{ imageurl }});">

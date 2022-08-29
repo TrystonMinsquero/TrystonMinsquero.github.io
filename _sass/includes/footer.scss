@@ -1,0 +1,20 @@
+footer.main
+{
+    border-top: 2px solid $clr-navbar-light;
+    img
+    {
+        width: 2rem;
+        height: 2rem;
+    }
+    
+    a
+    {
+        filter: invert(.7);
+        transition: all .1s ease-in;
+    }
+
+    a:hover
+    {
+        filter: invert(1);
+    }
+}

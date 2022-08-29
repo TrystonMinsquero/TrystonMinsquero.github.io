@@ -1,6 +1,6 @@
 ---
 permalink: /portfolio/
-title: Porfolio
+title: Portfolio
 ---
 
 {% include recent-projects.html %}

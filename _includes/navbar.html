@@ -1,11 +1,17 @@
-<header class="animated-header">
-    <h1 class='cursor'> Tryston Minsquero </h1>
+<header class="animated-header text-center">
+    <h1 class="cursor py-1 font-3xl lg:font-4xl"> Tryston Minsquero </h1>
 </header>
 
-<nav class="flex flex-row">
-    <a href="/"> Home </a>
-    <a href="/about/"> About </a>
-    <a href="/portfolio/"> Portfolio </a>
-    <a href="/resume/"> CV </a>
-    <a href="/contact/"> Contact </a>
+<nav class="main flex flex-column lg:flex-row">
+    <div class="flex flex-row items-center">
+        {% include burger.html id="nav-burger" class="ml-auto lg:display-none my-3 mr-4" %}
+    </div>
+    
+    <div class="links flex flex-column lg:flex-row justify-center w-screen overflow-hidden stateful" for="nav-burger">
+        <a href="/" class="{% if page.title=='Home' %}active{% endif %}"> <p> Home </p> </a>
+        <a href="/about/" class="{% if page.title=='About' %}active{% endif %}"> <p> About </p> </a>
+        <a href="/portfolio/" class="{% if page.title=='Portfolio' %}active{% endif %}"> <p> Portfolio </p> </a>
+        <a href="/resume/" class="{% if page.title=='Resume' %}active{% endif %}"> <p> CV </p> </a>
+        <a href="/contact/" class="{% if page.title=='Contact' %}active{% endif %}"> <p> Contact </p> </a>
+    </div>
 </nav>

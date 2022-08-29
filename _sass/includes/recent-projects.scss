@@ -1,0 +1,23 @@
+.recent-projects
+{
+    a
+    {
+        width: 18rem;
+        height: 18rem;
+        background-size: cover;
+
+        @media (max-width: 991px)
+        {
+            width: 100%;
+            padding-top: 100%;
+        }
+    }
+    
+    @media (max-width: 991px)
+    {
+        a:not(:last-child)
+        {
+            margin-bottom: 1rem;
+        }
+    }
+}
