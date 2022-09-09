@@ -49,7 +49,7 @@ header.animated-header
 
 nav.main
 {
-    background: linear-gradient( to bottom right, $clr-navbar-dark, $clr-navbar-light) no-repeat 0 0 / cover;
+    background-color: $clr-black-alt;
 
     a
     {
@@ -67,7 +67,24 @@ nav.main
     a.active
     {
         font-weight: bold;
-        background: linear-gradient( to top, $clr-current-light, $clr-current-dark) no-repeat 0 0;
+        background: $clr-sgda-red;
+        border-top-left-radius: .25rem;
+        border-top-right-radius: .25rem;
+    }
+
+    a.active:nth-child(2n)
+    {
+        background: $clr-sgda-yellow;
+    }
+
+    a.active:nth-child(3n)
+    {
+        background: $clr-sgda-green;
+    }
+
+    a.active:nth-child(4n)
+    {
+        background: $clr-sgda-blue;
     }
 
     a:hover
