@@ -1,0 +1,33 @@
+{% comment %}
+    * include.portfolio (bool) : use /_data/portfolio.yml instead of /_posts/
+    * include.exclude-portfolio (bool) : ignores posts in /_data/portfolio.yml. Should not be used with include.portfolio.
+    * include.amouunt (positive int) : limits the number of posts shown
+{% endcomment %}
+
+{% assign projects = site.posts %}
+{% if include.portfolio %}
+    {% assign projects = site.data.portfolio %}
+{% endif %}
+
+<div class="recent-projects justify-center column-gap-15 row-gap-15 {{ include.class }}" {{include.attr}}>
+{% for post in projects limit:include.amount %}
+    {% if include.exclude-portfolio %}
+        {% assign found = false %}
+        {% for proj in site.data.portfolio %}
+            {% if proj.title == post.title %}
+                {% assign found = true %}
+            {% endif %}
+        {% endfor %}
+
+        {% if found %}
+            {% continue %}
+        {% endif %}
+    {% endif %}
+    {% assign imageurl = post.url | append: "thumbnail.png" %}
+    <a href="{{ post.url }}" class="overflow-hidden text-no-decoration">
+        <img src="{{ imageurl }}" class="w-full h-full" alt="{{ post.title }}">
+        <div class="relative"><div class="w-full h-full cover"></div></div>
+        <h1 class="text-center w-full relative"> {{ post.title }} </h1>
+    </a>
+{% endfor %}
+</div>

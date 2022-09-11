@@ -132,3 +132,16 @@ input:focus-visible, textarea:focus-visible
 {
     text-decoration: none;
 }
+
+.w-fit
+{
+    width: fit-content;
+}
+
+// javascript classes
+.stateful
+{
+    max-height: 0;
+    overflow: hidden;
+    transition: all ease-in-out .3s;
+}

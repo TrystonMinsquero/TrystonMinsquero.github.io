@@ -91,17 +91,11 @@ nav.main
         }
     }
 
-    @media (max-width: 991px)
+    @media (min-width: 992px)
     {
-        .links
+        .links.stateful
         {
-            max-height: 0;
-            transition: all .2s;
-        }
-    
-        .links.active
-        {
-            max-height: 16rem;
+            max-height: none;
         }
     }
 }

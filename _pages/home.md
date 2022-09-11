@@ -17,5 +17,5 @@ animated-title: true
 </div>
 
 <div class="ignore content-wrapper py-12">
-    {% include recent-projects.html amount=3 class="content justify-between" %}
+    {% include projects.html amount=3 class="content justify-between" %}
 </div>
