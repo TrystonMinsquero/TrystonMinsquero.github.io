@@ -2,11 +2,11 @@
 title: Tobor Party
 ---
 
-### Role
+## Role
 
 Programmer & Project Manager
 
-### Team
+## Team
 
 Lucas Jaggernauth, Phu Le, Cameron Meyer, Henry Werner, J.C. Steed.
 
