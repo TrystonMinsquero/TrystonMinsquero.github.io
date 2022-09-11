@@ -1,11 +1,22 @@
 .recent-projects
 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 18rem);
+
+    @media (max-width: 344px)
+    {
+        grid-template-columns: 1fr;
+    }
+
     a
     {
         width: 18rem;
         height: 18rem;
+        max-width: 18rem;
+        max-height: 18rem;
 
         background-size: cover;
+        color: $clr-white;
 
         img
         {
@@ -65,14 +76,6 @@
         .cover
         {
             left: 120%;
-        }
-    }
-    
-    @media (max-width: 991px)
-    {
-        a:not(:last-child)
-        {
-            margin-bottom: 1rem;
         }
     }
 }

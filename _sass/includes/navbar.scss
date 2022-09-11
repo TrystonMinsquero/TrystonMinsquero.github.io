@@ -15,7 +15,7 @@ header.animated-header
         text-shadow: 0 0 0.5rem $clr-code-text;
     }
 
-    h1.cursor::after
+    &.enabled h1.cursor::after
     {
         content: '';
         display: inline-block;
@@ -53,43 +53,42 @@ nav.main
 
     a
     {
-        padding: 0.3rem 0.5rem;
-        text-decoration: none;
-        text-transform: uppercase;
-
+        color: $clr-white;
         p
         {
-            margin: .3rem;
-            padding: .3rem .75rem;
+            padding: 0 .4rem;
         }
     }
 
-    a.active
+    .links
     {
-        font-weight: bold;
-        background: $clr-sgda-red;
-        border-top-left-radius: .25rem;
-        border-top-right-radius: .25rem;
-    }
-
-    a.active:nth-child(2n)
-    {
-        background: $clr-sgda-yellow;
-    }
-
-    a.active:nth-child(3n)
-    {
-        background: $clr-sgda-green;
-    }
-
-    a.active:nth-child(4n)
-    {
-        background: $clr-sgda-blue;
-    }
-
-    a:hover
-    {
-        text-decoration: underline;
+        > div
+        {
+            padding: .9rem 1.5rem;
+        }
+    
+        > div.active
+        {
+            font-weight: bold;
+            background: $clr-sgda-red;
+            border-top-left-radius: .25rem;
+            border-top-right-radius: .25rem;
+        }
+    
+        > div.active:nth-child(2n)
+        {
+            background: $clr-sgda-yellow;
+        }
+    
+        > div.active:nth-child(3n)
+        {
+            background: $clr-sgda-green;
+        }
+    
+        > div.active:nth-child(4n)
+        {
+            background: $clr-sgda-blue;
+        }
     }
 
     @media (max-width: 991px)

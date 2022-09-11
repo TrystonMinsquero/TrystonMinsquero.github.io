@@ -5,6 +5,7 @@ body
 
     color: whitesmoke;
     background-color: $clr-black;
+    // background: url('/assets/images//TileablePatternBlack-168.png');
     
     padding: 0;
     margin: 0;
@@ -36,24 +37,78 @@ $max-width: 900px;
 
 a, a:visited
 {
-    color: white;
-    text-decoration: underline;
+    display: inline-block;
+    width: fit-content;
+    
+    color: lighten($clr-sgda-blue, 10%);
+    text-decoration: none;
+    
     animation: all .1s ease-in;
 }
 
-a:hover
+a::after
 {
-    color: $clr-black;
+    content: "";
+
+    display: block;
+    width: 100%;
+    height: 2px;
+
+    background-color: $clr-sgda-blue;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+
+    transition: transform ease-out 0.25s;
+}
+
+a:hover::after, a:active::after
+{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+a:hover::after, a:active::after
+{
+    opacity: 1;
 }
 
 button
 {
-    border: 0;
+    width: fit-content;
+    padding: .75rem 2rem;
+    
+    color: $clr-white;
+    font-weight: bold;
+    
+    border: 3px solid $clr-sgda-green;
+    background-color: $clr-sgda-green;
+    border-radius: 0.5rem;
+
+    transition: all ease-in .1s;
+}
+
+button:hover, button:active
+{
+    background-color: rgba($clr-sgda-green, 0);
 }
 
 img
 {
     border-radius: 5px;
+}
+
+input, textarea
+{
+    margin: 3px;
+    padding: .3rem;
+
+    border-radius: 4px;
+    border: none;
+}
+
+input:focus-visible, textarea:focus-visible
+{
+    outline: solid $clr-sgda-blue 3px;
 }
 
 // global gradients

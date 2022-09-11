@@ -1,18 +1,18 @@
-<header class="animated-header text-center">
+<header class="animated-header text-center{% if page.animated-title == true %} enabled{% endif %}">
     <h1 class="cursor py-1 font-3xl lg:font-4xl"> Tryston Minsquero </h1>
 </header>
 
-<nav class="main flex flex-column">
+<nav class="main flex flex-column lg:pt-2">
     <div class="flex flex-column lg:flex-row">
         <div class="flex flex-row items-center">
             {% include burger.html id="nav-burger" class="ml-auto lg:display-none my-3 mr-4" %}
         </div>
         
-        <div class="links flex flex-column lg:flex-row justify-around w-screen overflow-hidden stateful" for="nav-burger">
-            <a href="/" class="{% if page.title=='Home' %}active{% endif %}"> <p> Home </p> </a>
-            <a href="/portfolio/" class="{% if page.title=='Portfolio' %}active{% endif %}"> <p> Portfolio </p> </a>
-            <a href="/resume/" class="{% if page.title=='Resume' %}active{% endif %}"> <p> CV </p> </a>
-            <a href="/contact/" class="{% if page.title=='Contact' %}active{% endif %}"> <p> Contact </p> </a>
+        <div class="links text-uppercase flex flex-column lg:flex-row justify-around w-screen overflow-hidden stateful" for="nav-burger">
+            <div class="{% if page.title == 'Home' %}active{% endif %}"><a href="/"> <p> Home </p> </a></div>
+            <div class="{% if page.title == 'Portfolio' %}active{% endif %}"><a href="/portfolio/"> <p> Portfolio </p> </a></div>
+            <div class="{% if page.title == 'Resume' %}active{% endif %}"><a href="/resume/"> <p> CV </p> </a></div>
+            <div class="{% if page.title == 'Contact' %}active{% endif %}"><a href="/contact/"> <p> Contact </p> </a></div>
         </div>
     </div>
 
