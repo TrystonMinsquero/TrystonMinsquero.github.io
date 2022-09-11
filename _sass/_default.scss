@@ -1,4 +1,3 @@
-// document defaults
 body
 {
     font-family: "Montserrat", sans-serif;
@@ -35,7 +34,6 @@ $max-width: 900px;
     }
 }
 
-// default links
 a, a:visited
 {
     color: white;
@@ -48,10 +46,14 @@ a:hover
     color: $clr-black;
 }
 
-// default buttons
 button
 {
     border: 0;
+}
+
+img
+{
+    border-radius: 5px;
 }
 
 // global gradients
@@ -68,4 +70,10 @@ button
 .gradient-black
 {
     background: linear-gradient(to top right, $clr-gray-dark, $clr-gray-light) no-repeat 0 0 / cover;
+}
+
+// raisincss extensions
+.text-no-decoration
+{
+    text-decoration: none;
 }

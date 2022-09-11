@@ -1,8 +1,10 @@
-<div class="recent-projects flex flex-column lg:flex-row {{ include.class }}">
+<div class="recent-projects flex flex-column lg:flex-row flex-wrap {{ include.class }}">
 {% for post in site.posts limit:include.amount %}
     {% assign imageurl = post.url | append: "thumbnail.png" %}
-    <a href="{{ post.url }}" style="background-image: url({{ imageurl }});">
-        <p> {{ post.title }} </p>
+    <a href="{{ post.url }}" class="overflow-hidden text-no-decoration">
+        <img src="{{ imageurl }}" class="w-full h-full">
+        <div class="relative"><div class="w-full h-full cover"></div></div>
+        <h1 class="text-center w-full relative"> {{ post.title }} </h1>
     </a>
 {% endfor %}
 </div>

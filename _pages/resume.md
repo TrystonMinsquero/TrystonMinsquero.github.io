@@ -3,8 +3,6 @@ permalink: /resume/
 title: Resume
 ---
 
-<iframe class='responsive-iframe'
-    src='/assets/images/Resume.pdf'
-    width='100%'
-    height='900px'>
-</iframe>
+<div class="py-4">
+    <iframe src='/assets/images/Resume.pdf#view=fit' class="w-full" style="height: 90vh;"> </iframe>
+</div>

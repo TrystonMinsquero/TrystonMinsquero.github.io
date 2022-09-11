@@ -6,7 +6,7 @@ $linear-full: .5rem;
 header.animated-header
 {
     // background-color: $clr-code-background;
-    background: repeating-linear-gradient($clr-code-background, $clr-code-background $linear-half, $clr-code-background-secondary $linear-half, $clr-code-background-secondary $linear-full);
+    background: repeating-linear-gradient($clr-code-background, $clr-code-background $linear-half, lighten($clr-code-background, 0.75) $linear-half, lighten($clr-code-background, 0.75) $linear-full);
     animation: slide 2s linear infinite;
 
     h1
