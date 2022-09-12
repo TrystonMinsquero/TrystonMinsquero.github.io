@@ -70,7 +70,7 @@ title: Contact
     </button>
     <div class="flex flex-column items-center">
         <h3> Feel free to email at </h3>
-        <a href="/email"> TrystonMinsquero (at) gmail.com</a>
+        <a href="/email"> TrystonMinsquero@gmail.com</a>
     </div>
 </form>
 

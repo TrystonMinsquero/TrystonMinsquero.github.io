@@ -1,7 +1,10 @@
 footer.main
 {
     background-color: $clr-black-alt;
-    
+}
+
+.socials
+{
     img
     {
         width: 2rem;
@@ -13,7 +16,7 @@ footer.main
         filter: invert(.7);
         transition: all .1s ease-in;
     }
-
+    
     a:hover
     {
         filter: invert(1);

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8' />
+        <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+        <meta http-equiv='X-UA-Compatible' content='ie=edge' />
+        <link rel="icon" type="image/x-icon" href="/assets/images/favicon.png">
+        
+        <title> Tryston Minsquero | Wyle's Loop </title>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-FWQF9CQ8MJ"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-FWQF9CQ8MJ');
+        </script>
+
+        <!-- Font Awesome -->
+        <script src='https://kit.fontawesome.com/3e7b4fdb0f.js' crossorigin='anonymous'></script>
+
+        <!-- Custom -->
+        <link rel="stylesheet" href="/assets/css/main.css">
+
+        <style>
+            
+            h1 {
+  font-size: 2.2rem; }
+
+h2 {
+  font-size: 1.8rem; }
+
+h3 {
+  font-size: 1.6rem; }
+
+h4 {
+  font-size: 1.4rem; }
+
+h5 {
+  font-size: 1.2rem; }
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6rem; }
+
+h1, h2, h3, h4, h5, p {
+  padding-bottom: 1rem; }
+
+        </style>
+    </head>
+    <body class="flex flex-column justify-between" style="min-height: 100vh;">
+        <div>
+            <header class="animated-header text-center">
+    <h1 class="cursor py-1 font-3xl lg:font-4xl"> Tryston Minsquero </h1>
+</header>
+
+<nav class="main flex flex-column lg:pt-2">
+    <div class="flex flex-column lg:flex-row">
+        <div class="flex flex-row items-center">
+            <button type="button" id="nav-burger" class="hamburger ml-auto lg:display-none my-3 mr-4" aria-label="Main Navigation Burger">
+    <span class="hamburger-inner"></span>
+</button>
+        </div>
+        
+        <div class="links text-uppercase flex flex-column lg:flex-row justify-center w-screen overflow-hidden stateful" for="nav-burger">
+            <div class=""><a href="/"> <p> Home </p> </a></div>
+            <div class=""><a href="/portfolio/"> <p> Portfolio </p> </a></div>
+            <div class=""><a href="/resume/"> <p> CV </p> </a></div>
+            <div class=""><a href="/contact/"> <p> Contact </p> </a></div>
+        </div>
+    </div>
+
+    <div class="gradient-sgda w-full pt-1"></div>
+</nav>
+        </div>
+
+        <main class="children-are-content">
+            <h1 class="pt-12 pb-4"> Wyle's Loop</h1>
+
+            <h3 id="team">Team</h3>
+
+<p>Michael Bettes</p>
+
+<h2 id="summary">Summary</h2>
+
+<p>This was the first game I made in unity, as well as the first game jam entry and first time working with another person. It was made for Ludum Dare in 3 days with barely knowing much about Unity or C#. It’s not very flashy and the controls and gameplay are a little clunky, but I was proud of what I was able to learn and make within a few days. However, I was still intrigued with the potential solutions to fix the game so I decided to try to fix a lot of the major problems and explore new features.</p>
+
+<h2 id="what-i-contributed">What I contributed</h2>
+
+<ul>
+  <li>Player Controls</li>
+  <li>All art except for main character</li>
+  <li>Sound Effects</li>
+  <li>High-score system (after jam)</li>
+</ul>
+
+<h2 id="challenges-faced">Challenges faced</h2>
+
+<p>Not knowing unity or C# was a big difficulty, I had made a game before in python using pygame before which helped me with the physics for the player movement, but still was a major obstacle. Also I was unfamiliar with github at the time and used unity cloud system as a version control.</p>
+
+<h2 id="what-i-learned">What I Learned</h2>
+
+<p>I learned a lot about how Unity works and the basics of switch to C# from Java. Also how to manage my time to have a finished product in a limited time frame. And the more technical skills, making a video game and how to upload it to the web as well as learning how to implement a high-score system in my Unity project (after jam). This was also really important for me to realize I could make just about anything I wanted with enough time from youtube tutorials and applications what I’ve learned in school.</p>
+
+            
+            <div class="pb-12"></div>
+        </main>
+
+        <footer class="main pb-8">
+    <div class="gradient-sgda w-full mb-8 pt-1"></div>
+    <div class="content-wrapper">
+        <div class="socials w-fit grid column-gap-30 has-4-columns justify-items-center align-items-center content">
+    <a href="/discord" target="_blank">
+        <img src="/assets/images/icons/discord.svg" alt="Discord" class="display-block"/>
+    </a>
+    <a href="/linkedin" target="_blank">
+        <img src="/assets/images/icons/linkedin.svg" alt="LinkedIn" class="display-block mb-1"/>
+    </a>
+    <a href="/github" target="_blank">
+        <img src="/assets/images/icons/github.svg" alt="Github" class="display-block mb-1"/>
+    </a>
+    <a href="/itch-io" target="_blank">
+        <img src="/assets/images/icons/itch-io.svg" alt="Itch.io" class="display-block mb-1"/>
+    </a>
+</div>
+    </div>
+</footer>
+    </body>
+
+    <script>
+        
+        if (window.addEventListener)
+{
+    window.addEventListener('load', burger);
+}
+else
+{
+    window.attachEvent('onload', burger);
+}
+
+function burger()
+{
+    let stateful_elements = document.getElementsByClassName("stateful");
+
+    for (let i = 0; i < stateful_elements.length; i++)
+    {
+        let el = stateful_elements[i];
+        button = document.getElementById(el.getAttribute("for"));
+
+        button.addEventListener('click', function (e)
+        {
+            button.classList.toggle('active');
+
+            new_height = 0;
+            if (el.classList.toggle('active'))
+            {
+                for (let j = 0; j < el.children.length; j++)
+                {
+                    let child = el.children[j];
+                    new_height += child.clientHeight;
+                }
+            }
+
+            el.style.setProperty('max-height', new_height + "px", 'important');
+        });
+    }
+};
+    </script>
+</html>

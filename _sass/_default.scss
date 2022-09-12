@@ -117,14 +117,21 @@ input:focus-visible, textarea:focus-visible
     background: linear-gradient(90deg, $clr-sgda-red 0%, $clr-sgda-yellow 33%, $clr-sgda-green 50%, $clr-sgda-blue 90%);
 }
 
-.gradient-blue
+.gradient-blue-green
 {
-    background: linear-gradient(to top, $clr-home-light, $clr-home-light, $clr-cover-light ) no-repeat 0 0
+    $darken-amt: 10%;
+    background: linear-gradient(30deg, darken($clr-sgda-blue, $darken-amt) 15%, #30753a 100%);
 }
 
-.gradient-black
+// global colors
+.box-shadow-blue
 {
-    background: linear-gradient(to top right, $clr-gray-dark, $clr-gray-light) no-repeat 0 0 / cover;
+    box-shadow: 0 0 3rem rgba($clr-sgda-blue, 0.1);
+}
+
+.box-shadow-bottom
+{
+    box-shadow: 0 2rem 3rem rgba($clr-black-alt, 0.37);
 }
 
 // raisincss extensions

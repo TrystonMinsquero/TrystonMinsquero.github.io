@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8' />
+        <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+        <meta http-equiv='X-UA-Compatible' content='ie=edge' />
+        <link rel="icon" type="image/x-icon" href="/assets/images/favicon.png">
+        
+        <title> Tryston Minsquero | Time DashKing </title>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-FWQF9CQ8MJ"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-FWQF9CQ8MJ');
+        </script>
+
+        <!-- Font Awesome -->
+        <script src='https://kit.fontawesome.com/3e7b4fdb0f.js' crossorigin='anonymous'></script>
+
+        <!-- Custom -->
+        <link rel="stylesheet" href="/assets/css/main.css">
+
+        <style>
+            
+            h1 {
+  font-size: 2.2rem; }
+
+h2 {
+  font-size: 1.8rem; }
+
+h3 {
+  font-size: 1.6rem; }
+
+h4 {
+  font-size: 1.4rem; }
+
+h5 {
+  font-size: 1.2rem; }
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6rem; }
+
+h1, h2, h3, h4, h5, p {
+  padding-bottom: 1rem; }
+
+        </style>
+    </head>
+    <body class="flex flex-column justify-between" style="min-height: 100vh;">
+        <div>
+            <header class="animated-header text-center">
+    <h1 class="cursor py-1 font-3xl lg:font-4xl"> Tryston Minsquero </h1>
+</header>
+
+<nav class="main flex flex-column lg:pt-2">
+    <div class="flex flex-column lg:flex-row">
+        <div class="flex flex-row items-center">
+            <button type="button" id="nav-burger" class="hamburger ml-auto lg:display-none my-3 mr-4" aria-label="Main Navigation Burger">
+    <span class="hamburger-inner"></span>
+</button>
+        </div>
+        
+        <div class="links text-uppercase flex flex-column lg:flex-row justify-center w-screen overflow-hidden stateful" for="nav-burger">
+            <div class=""><a href="/"> <p> Home </p> </a></div>
+            <div class=""><a href="/portfolio/"> <p> Portfolio </p> </a></div>
+            <div class=""><a href="/resume/"> <p> CV </p> </a></div>
+            <div class=""><a href="/contact/"> <p> Contact </p> </a></div>
+        </div>
+    </div>
+
+    <div class="gradient-sgda w-full pt-1"></div>
+</nav>
+        </div>
+
+        <main class="children-are-content">
+            <h1 class="pt-12 pb-4"> Time DashKing</h1>
+
+            <h3 id="role">Role</h3>
+
+<p>Programmer &amp; Project Manager</p>
+
+<h3 id="team">Team</h3>
+
+<p>Michael Bettes, Aparna Manoj, Pauline Le, Kameron Thrasher</p>
+
+<h2 id="summary">Summary</h2>
+
+<p>Time DashKing was my 6th game jam and 3rd game for Ludum Dare. This time around I just wanted to have fun and see what I could do with some friends after almost 2 years of game development. Time DashKing is a Top Down action adventure, and somewhat of a roguelike. It has a very unique combat system that turned out to be a lot of fun and I was happy that I was able to write the code to make it work.</p>
+
+<h2 id="what-i-contributed">What I contributed</h2>
+
+<p>I was the sole programmer on the team. This means I programmed everything which encompassed player controls, enemy AI, Room features, upgrades, UI, combat, and many other features. I also was the one that brought everyone together and come up with ideas, as well as prepare the people who had not participated in what they would expect in their roles, then also guided them during the jam.</p>
+
+<h2 id="challenges-faced">Challenges faced</h2>
+
+<p>Both of the artist had not done any art prior to the week before the event. However, they did a great job when it came to contributing. When it came to programming, It was very difficult to create a checkpoint system that would save between. I knew I could do it and it was fairly simple, but I think the lack of sleep and added stress of the game jam clouded my mind a bit. Another difficulty was coming up with the most effective way to design the structure the upgrade system. I was not sure how I could make it the most extensible either using abstract classes or interfaces, and how it would be easily added by the level designer. I had ended up using an abstract class where the level designer could easily edit the values and ended up working out great.</p>
+
+<h2 id="what-i-learned">What I Learned</h2>
+
+<p>I learned a lot about the software architecture about games. Previously I had just been trying to get some functionality to work or watching a tutorial on the internet. This time I was thinking about organization of my programs and made a UML class diagram to stay organized. Additionally, I had not watched a single tutorial, which proved to myself that I have become very competent with Unity and C#.</p>
+
+            
+            <div class="pb-12"></div>
+        </main>
+
+        <footer class="main pb-8">
+    <div class="gradient-sgda w-full mb-8 pt-1"></div>
+    <div class="content-wrapper">
+        <div class="socials w-fit grid column-gap-30 has-4-columns justify-items-center align-items-center content">
+    <a href="/discord" target="_blank">
+        <img src="/assets/images/icons/discord.svg" alt="Discord" class="display-block"/>
+    </a>
+    <a href="/linkedin" target="_blank">
+        <img src="/assets/images/icons/linkedin.svg" alt="LinkedIn" class="display-block mb-1"/>
+    </a>
+    <a href="/github" target="_blank">
+        <img src="/assets/images/icons/github.svg" alt="Github" class="display-block mb-1"/>
+    </a>
+    <a href="/itch-io" target="_blank">
+        <img src="/assets/images/icons/itch-io.svg" alt="Itch.io" class="display-block mb-1"/>
+    </a>
+</div>
+    </div>
+</footer>
+    </body>
+
+    <script>
+        
+        if (window.addEventListener)
+{
+    window.addEventListener('load', burger);
+}
+else
+{
+    window.attachEvent('onload', burger);
+}
+
+function burger()
+{
+    let stateful_elements = document.getElementsByClassName("stateful");
+
+    for (let i = 0; i < stateful_elements.length; i++)
+    {
+        let el = stateful_elements[i];
+        button = document.getElementById(el.getAttribute("for"));
+
+        button.addEventListener('click', function (e)
+        {
+            button.classList.toggle('active');
+
+            new_height = 0;
+            if (el.classList.toggle('active'))
+            {
+                for (let j = 0; j < el.children.length; j++)
+                {
+                    let child = el.children[j];
+                    new_height += child.clientHeight;
+                }
+            }
+
+            el.style.setProperty('max-height', new_height + "px", 'important');
+        });
+    }
+};
+    </script>
+</html>
