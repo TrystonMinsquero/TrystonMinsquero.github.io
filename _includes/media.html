@@ -1,0 +1,12 @@
+<figure class="{{ include.class }}">
+{% if include.video %}
+    <video class="w-full" muted="" autoplay="" controls="" loop="">
+        <source src="{{ page.url | append: include.video }}">
+    </video>
+{% else if include.image %}
+    <img src="{{ page.url | append: include.image }}">
+{% endif %}
+{% if include.caption %}
+    <figcaption class="text-center"> {{ include.caption }} </figcaption>
+{% endif %}
+</figure>

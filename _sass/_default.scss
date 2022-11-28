@@ -28,10 +28,16 @@ $max-width: 900px;
 
 @media (max-width: $max-width)
 {
-    .children-are-content > *:not(.ignore)
+    .children-are-content > *:not(.ignore, figure)
     {
         padding-left: 1.75rem;
         padding-right: 1.75rem;
+    }
+
+    figure
+    {
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
@@ -44,6 +50,13 @@ a, a:visited
     text-decoration: none;
     
     animation: all .1s ease-in;
+
+    i
+    {
+        font-size: 2rem;
+        color: $clr-white;
+        transition: all .1s ease-in;
+    }
 }
 
 a::after
@@ -72,6 +85,30 @@ a:hover::after, a:active::after
     opacity: 1;
 }
 
+a:hover
+{
+    i
+    {
+        color: darken($clr-white, 30%);
+    }
+}
+
+a.button
+{
+    padding: 1rem 2.5rem;
+    border: 3px solid $clr-white;
+    border-radius: 2rem;
+    color: $clr-white;
+
+    background: linear-gradient(to right, #4568dc, #b06ab3) no-repeat 0 0 / cover;
+    transition: all ease-in-out .1s;
+}
+
+a.button:hover, a.button:active
+{
+    filter: brightness(90%);
+}
+
 button
 {
     width: fit-content;
@@ -95,6 +132,13 @@ button:hover, button:active
 img
 {
     border-radius: 5px;
+}
+
+figcaption
+{
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    margin: .4rem 0;
 }
 
 input, textarea
@@ -132,6 +176,11 @@ input:focus-visible, textarea:focus-visible
 .box-shadow-bottom
 {
     box-shadow: 0 2rem 3rem rgba($clr-black-alt, 0.37);
+}
+
+.bg-black-alt
+{
+    background-color: $clr-black-alt;
 }
 
 // raisincss extensions

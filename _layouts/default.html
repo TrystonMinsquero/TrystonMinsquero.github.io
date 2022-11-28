@@ -12,21 +12,8 @@ layout: compress
         
         <title> {{ site.title }} | {{ page.title }} </title>
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-FWQF9CQ8MJ"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-FWQF9CQ8MJ');
-        </script>
-
-        <!-- Font Awesome -->
-        <script src='https://kit.fontawesome.com/3e7b4fdb0f.js' crossorigin='anonymous'></script>
-
-        <!-- Custom -->
-        <link rel="stylesheet" href="/assets/css/main.css">
+        {% include analytics.html %}
+        {% include default-styles.html %}
     </head>
     <body class="flex flex-column justify-between" style="min-height: 100vh;">
         <div>
@@ -40,10 +27,5 @@ layout: compress
         {% include footer.html %}
     </body>
 
-    <script>
-        {% if page.animated-title %}
-            {% include js/typing.js %}
-        {% endif %}
-        {% include js/burger.js %}
-    </script>
+    {% include default-scripts.html %}
 </html>
